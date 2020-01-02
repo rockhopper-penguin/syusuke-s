@@ -5,13 +5,19 @@
         <title>S.Seto(Rockhopper-Penguin)</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
+        <script src="src/vue.js"></script>
     </head>
     <body>
         <div id="profile">
+            <p id="profile-image">
+                <img src="img/profile.jpg" alt="プロフィール写真">
+            </p>
             <div id="name">
                 <h1>瀬戸　秀輔</h1>
                 <p>Rockhopper-Penguin</p>
             </div>
+            <p id="age">Age：{{ getAge }}</p>
         </div>
+        <script src="src/profile.js"></script>
     </body>
 </html>
