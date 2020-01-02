@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Yu Gothic', 'Hiragino kaku Gothic Pro', sans-serif;
+}
+
+#name p {
+    margin-top: -20px;
+}
