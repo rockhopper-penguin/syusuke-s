@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta charset="UTF-8">
         <title>S.Seto(Rockhopper-Penguin)</title>
+        <script src="https://kit.fontawesome.com/d21febc69f.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
         <script src="src/vue.js"></script>
     </head>
     <body>
         <div id="profile">
-            <p id="profile-image">
+            <div id="profile-image">
                 <img src="img/profile.jpg" alt="プロフィール写真">
-            </p>
-            <div id="name">
-                <h1>Seto Syusuke</h1>
-                <p>(Rockhopper-Penguin)</p>
             </div>
-            <p id="age">Age：{{ getAge }}</p>
+            <div id="profile-text">
+                <div id="name">
+                    <h1>Seto Syusuke</h1>
+                    <p>(Rockhopper-Penguin)</p>
+                </div>
+                <div class="profile-link">
+                    <p>
+                        <a href="https://github.com/rockhopper-penguin"><i class="fab fa-github"></i>GitHub</a>
+                    </p>
+                    <p>
+                        <a href="https://www.facebook.com/penguin.s.seto"><i class="fab fa-facebook"></i>Facebook</a>
+                    </p>
+                </div>
+            </div>
         </div>
+        <footer>
+            <small>&copy; S.Seto</small>
+        </footer>
         <script src="src/profile.js"></script>
     </body>
 </html>
