@@ -31,8 +31,19 @@ body a {
     margin-top: -20px;
 }
 
-.profile-link i {
+.profile-link img {
     font-size: 2rem;
     color: black;
     margin: 10px;
+}
+
+.profile-link p img,  .profile-link p i{
+    width: 40px;
+    height: auto;
+    color: black;
+    margin: 10px;
+}
+
+.profile-link a {
+    vertical-align: middle;
 }
