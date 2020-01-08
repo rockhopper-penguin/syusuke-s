@@ -17,6 +17,10 @@ body a {
     text-decoration: none;
 }
 
+i {
+    color: #212529;
+}
+
 #profile, footer {
     text-align: center;
 }
@@ -37,16 +41,16 @@ body a {
     margin-top: -25px;
 }
 
-.profile-link img {
+/* .profile-link img {
     font-size: 2rem;
     color: black;
     margin: 10px;
-}
+} */
 
 .profile-link i{
     width: 40px;
     height: auto;
-    color: black;
+    /* color: black; */
     margin: 5px -5px 5px 5px;
 }
 
