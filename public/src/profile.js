@@ -6,7 +6,7 @@ const profile = new Vue({
 });
 
 function calcAge() {
-    const birthday = 19990801;
+    const birthday; //生年月日
     const getToday = new Date();
     const getYear = getToday.getFullYear().toString().padStart(4, '0');
     const getMonth = (getToday.getMonth() + 1).toString().padStart(2, '0');
