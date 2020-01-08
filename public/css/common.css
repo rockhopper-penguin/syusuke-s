@@ -1,7 +1,13 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: M_PLUS_1p;
+    src: url('../font/M_PLUS_1p/MPLUS1p-Regular.ttf') format("truetype");
+}
+
 body {
-    font-family: 'Yu Gothic', 'Hiragino kaku Gothic Pro', sans-serif;
+    font-family: 'M_PLUS_1p';
+    /*font-family: 'Yu Gothic', 'Hiragino kaku Gothic Pro', sans-serif;*/
     width: 90%;
     height: auto;
     margin: auto;
@@ -37,9 +43,9 @@ body a {
     margin: 10px;
 }
 
-.profile-link p i{
+.profile-link i{
     width: 40px;
     height: auto;
     color: black;
-    margin: 5px;
+    margin: 5px -5px 5px 5px;
 }

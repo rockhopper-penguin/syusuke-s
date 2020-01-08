@@ -28,6 +28,6 @@
 
     /*TODO: リンクを左揃えにする*/
     .profile-link p {
-        text-align: left !important;
+        text-align: left;
     }
 }
