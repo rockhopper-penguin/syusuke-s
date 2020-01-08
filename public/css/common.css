@@ -34,7 +34,7 @@ body a {
 }
 
 #name p {
-    margin-top: -20px;
+    margin-top: -25px;
 }
 
 .profile-link img {
@@ -48,4 +48,8 @@ body a {
     height: auto;
     color: black;
     margin: 5px -5px 5px 5px;
+}
+
+.profile-link p {
+    margin: 2px;
 }

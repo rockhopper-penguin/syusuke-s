@@ -18,6 +18,10 @@
         flex-wrap: wrap;
     }
 
+    #name h1 {
+        margin-top: 10px;
+    }
+
     #profile-text, #profile-image {
         padding: 20px;
     }
@@ -26,7 +30,6 @@
         width: 400px;
     }
 
-    /*TODO: リンクを左揃えにする*/
     .profile-link p {
         text-align: left;
     }
