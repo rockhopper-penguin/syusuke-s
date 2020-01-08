@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+body {
+	width: 100%;
+}
+
 @media (orientation: portrait) and (max-width: 400px) { /*スマホ縦*/
     #profile {
         font-size: 1.1rem;
@@ -10,41 +14,7 @@
     }
 }
 
-@media (orientation: landscape) and (max-width: 600px) {	/*スマホ横*/
-    #profile {
-        font-size: 1rem;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    #name h1 {
-        margin-top: -10px;
-    }
-
-    #profile-text, #profile-image {
-        padding: 10px;
-    }
-
-    #profile-image img {
-        width: 160px;
-        height: auto;
-    }
-
-    .profile-link p {
-        text-align: left;
-    }
-
-    #icon {
-        margin-top: -20px;
-    }
-
-    #skill-icon1, #skill-icon2 {
-        margin: 0;
-    }    
-}
-
-@media (orientation: landscape) and (max-width: 820px) {	/*大画面サイズスマホ横*/
+@media (orientation: landscape) and (max-width: 820px) {	/*スマホ横*/
     #profile {
         font-size: 1.2rem;
         display: flex;
