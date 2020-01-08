@@ -53,3 +53,8 @@ body a {
 .profile-link p {
     margin: 2px;
 }
+
+#skils-icon1 i ,#skils-icon2 i {
+    font-size: 40px;
+    padding: 5px;
+}

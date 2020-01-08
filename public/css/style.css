@@ -33,4 +33,12 @@
     .profile-link p {
         text-align: left;
     }
+
+    #icon {
+        margin-top: -20px;
+    }
+
+    #skils-icon1, #skils-icon2 {
+        margin: 0;
+    }
 }
