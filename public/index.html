@@ -32,18 +32,18 @@
                     <h3>{{ skill }}</h3>
                     <div id="icon">
                         <div id="skills-icon1">
-                            <i class="fab fa-aws"></i>
-                            <i class="fab fa-bootstrap"></i>
-                            <i class="fab fa-centos"></i>
-                            <i class="fab fa-css3"></i>
-                            <i class="fab fa-js-square"></i>
+                            <i class="fab fa-aws" v-on:mouseover = "aws" v-on:mouseleave = "remove"></i>
+                            <i class="fab fa-bootstrap" v-on:mouseover = "bootstrap" v-on:mouseleave = "remove"></i>
+                            <i class="fab fa-centos" v-on:mouseover = "centos" v-on:mouseleave = "remove"></i>
+                            <i class="fab fa-css3" v-on:mouseover = "css" v-on:mouseleave = "remove"></i>
+                            <i class="fab fa-js-square" v-on:mouseover = "js" v-on:mouseleave = "remove"></i>
                         </div>
                         <div id="skills-icon2">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-python"></i>
-                            <i class="fab fa-ubuntu"></i>
-                            <i class="fab fa-vuejs"></i>
-                            <i class="fab fa-wordpress"></i>
+                            <i class="fab fa-html5" v-on:mouseover = "html" v-on:mouseleave = "remove"></i>
+                            <i class="fab fa-python" v-on:mouseover = "python" v-on:mouseleave = "remove"></i>
+                            <i class="fab fa-ubuntu" v-on:mouseover = "ubuntu" v-on:mouseleave = "remove"></i>
+                            <i class="fab fa-vuejs" v-on:mouseover = "vue" v-on:mouseleave = "remove"></i>
+                            <i class="fab fa-wordpress" v-on:mouseover = "wordpress" v-on:mouseleave = "remove"></i>
                         </div>
                     </div>
                 </div>
@@ -52,6 +52,6 @@
         <footer>
             <small>&copy; Rockhopper-Penguin</small>
         </footer>
-        <script src="src/skils.js"></script>
+        <script src="src/skill.js"></script>
     </body>
 </html>
