@@ -26,6 +26,7 @@
         width: 400px;
     }
 
+    /*TODO: リンクを左揃えにする*/
     .profile-link p {
         text-align: left !important;
     }
