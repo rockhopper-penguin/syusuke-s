@@ -54,3 +54,11 @@ i {
 	font-size: 40px;
 	padding: 5px;
 }
+
+#certified {
+	margin: auto;
+}
+
+#certified h3 {
+	text-align: center;
+}
