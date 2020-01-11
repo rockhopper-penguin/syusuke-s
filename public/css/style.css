@@ -99,11 +99,11 @@ body {
 		width: 60%;
 	}
 
-	#links {
+	#links, #Used {
 		font-size: 1.5rem;
 	}
 
-	#link {
+	#link, #details {
 		width: 90%;
 		display: flex;
 		justify-content: center;
@@ -113,5 +113,13 @@ body {
 
 	#link1, #link2 {
 		margin: auto;
+	}
+
+	#env ul li, #ide ul li, #soft ul li {
+		list-style-type: square;
+	}
+
+	#details ul li {
+		text-align: start;
 	}
 }

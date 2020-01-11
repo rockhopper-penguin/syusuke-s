@@ -63,10 +63,14 @@ i {
 	margin: auto;
 }
 
-#certified h3, #links h3 {
+#certified h3, #links h3, #Used {
 	text-align: center;
 }
 
 #certified i {
 	margin: 10px;
+}
+
+#env, #ide, #soft {
+	padding: 10px;
 }
