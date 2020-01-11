@@ -59,7 +59,11 @@ i {
 	margin: auto;
 }
 
-#certified h3 {
+#links {
+	margin: auto;
+}
+
+#certified h3, #links h3 {
 	text-align: center;
 }
 
