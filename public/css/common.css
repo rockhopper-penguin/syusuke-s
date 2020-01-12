@@ -71,6 +71,10 @@ i {
 	margin: 10px;
 }
 
+#Used h3 {
+	margin-bottom: -10px;
+}
+
 #env, #ide, #soft {
 	padding: 10px;
 }
