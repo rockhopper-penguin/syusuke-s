@@ -4,6 +4,14 @@ body {
 	width: 100%;
 }
 
+ul li {
+	font-size: 1.5rem;
+}
+
+#details ul li {
+	text-align: start;
+}
+
 @media (orientation: portrait) and (max-width: 400px) { /*スマホ縦*/
 	#profile {
 		font-size: 1.1rem;
@@ -113,13 +121,5 @@ body {
 
 	#link1, #link2 {
 		margin: auto;
-	}
-
-	#env ul li, #ide ul li, #soft ul li {
-		list-style-type: square;
-	}
-
-	#details ul li {
-		text-align: start;
 	}
 }
