@@ -20,7 +20,7 @@
 	<body>
 		<div id="profile">
 			<div id="profile-image">
-				<img src="img/profile.jpg" alt="プロフィール写真">
+				<img :src="imgName" alt="プロフィール写真"  v-on:mouseover = "imgMouseOver" v-on:mouseleave = "imgMouseRemove">
 			</div>
 			<div id="profile-text">
 				<div id="name">
@@ -59,6 +59,7 @@
 		<footer>
 			<small>&copy; <a href="https://rockhopper-penguin.web.app/" target="_blank">Rockhopper-Penguin</a></small>
 		</footer>
+		<script src="src/profile.js"></script>
 		<script src="src/skill.js"></script>
 	</body>
 </html>

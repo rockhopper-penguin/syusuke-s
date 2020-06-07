@@ -1,18 +1,14 @@
 const profile = new Vue({
-	el: '#profile',
+	el: '#profile-image',
 	data: {
-		getAge: this.calcAge(),
+		imgName: "img/king_and_rockhopper.jpg"
+	},
+	methods: {
+		imgMouseOver: function() {
+			this.imgName = "img/king.jpg";
+		},
+		imgMouseRemove: function () {
+			this.imgName = "img/king_and_rockhopper.jpg";
+		}
 	}
 });
-
-function calcAge() {
-	const birthday; //生年月日
-	const getToday = new Date();
-	const getYear = getToday.getFullYear().toString().padStart(4, '0');
-	const getMonth = (getToday.getMonth() + 1).toString().padStart(2, '0');
-	const getDate = getToday.getDate().toString().padStart(2, '0');
-	let adder = getYear + getMonth + getDate;
-	let calc = Math.floor((Number(adder) - birthday) / 10000);
-	console.log(calc);
-	return calc;
-}
