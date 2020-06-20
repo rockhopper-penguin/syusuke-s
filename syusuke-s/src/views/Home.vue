@@ -1,18 +1,37 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <div class="penguin_icon_images">
+      <img
+        :src="homePenguinImage"
+        v-on:mouseover="homePenguinImageOver"
+        v-on:mouseleave="homePenguinImageRemove"
+        alt="ペンギン"
+      />
+    </div>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
 
-export default {
-  name: "Home",
-  components: {
-    HelloWorld
+@Component
+export default class Home extends Vue {
+  private homePenguinImage = "img/king_and_rockhopper.jpg";
+
+  private homePenguinImageOver() {
+    this.homePenguinImage = "img/king.jpg";
   }
-};
+  private homePenguinImageRemove() {
+    this.homePenguinImage = "img/king_and_rockhopper.jpg";
+  }
+}
 </script>
+
+<style>
+.penguin_icon_images img {
+  width: 60%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px gray;
+}
+</style>
