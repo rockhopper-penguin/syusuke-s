@@ -28,8 +28,11 @@ export default class Home extends Vue {
 </script>
 
 <style>
+.penguin_icon_images {
+  margin: 10px;
+}
 .penguin_icon_images img {
-  width: 60%;
+  width: 500px;
   height: auto;
   border-radius: 20px;
   box-shadow: 0px 0px 20px gray;
