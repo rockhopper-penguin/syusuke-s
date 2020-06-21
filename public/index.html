@@ -1,65 +1,17 @@
 <!DOCTYPE html>
-<html lang="ja">
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-		<meta name="author" content="rockhopper-penguin,瀬戸秀輔">
-		<meta name="keywords" content="rockhopper-penguin">
-		<meta charset="UTF-8">
-		<title>S.Seto(Rockhopper-Penguin)</title>
-		<link rel="stylesheet" href="FontAwesome/css/all.min.css">
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/common.css">
-		<link rel="stylesheet" href="css/style.css">
-		<script src="src/vue.js"></script>
-	</head>
-	<script>
-		if (window.orientation == 0) {
-			alert("横画面にすると名刺風になります！");
-		}
-	</script>
-	<body>
-		<div id="profile">
-			<div id="profile-image">
-				<img :src="imgName" alt="プロフィール写真"  v-on:mouseover = "imgMouseOver" v-on:mouseleave = "imgMouseRemove">
-			</div>
-			<div id="profile-text">
-				<div id="name">
-					<h1>Seto Syusuke</h1>
-					<p>(Rockhopper-Penguin)</p>
-				</div>
-				<div class="profile-link">
-					<p>
-						<a href="https://github.com/rockhopper-penguin"><i class="fab fa-github"></i>rockhopper-penguin</a>
-					</p>
-					<p>
-						<a href="https://www.facebook.com/penguin.s.seto"><i class="fab fa-facebook"></i>penguin.s.seto</a>
-					</p>
-				</div>
-				<div class="skills">
-					<h3>{{ skill }}</h3>
-					<div id="icon">
-						<div id="skills-icon1">
-							<i class="fab fa-aws" v-on:mouseover = "aws" v-on:mouseleave = "remove"></i>
-							<i class="fab fa-bootstrap" v-on:mouseover = "bootstrap" v-on:mouseleave = "remove"></i>
-							<i class="fab fa-centos" v-on:mouseover = "centos" v-on:mouseleave = "remove"></i>
-							<i class="fab fa-css3" v-on:mouseover = "css" v-on:mouseleave = "remove"></i>
-							<i class="fab fa-js-square" v-on:mouseover = "js" v-on:mouseleave = "remove"></i>
-						</div>
-						<div id="skills-icon2">
-							<i class="fab fa-html5" v-on:mouseover = "html" v-on:mouseleave = "remove"></i>
-							<i class="fab fa-python" v-on:mouseover = "python" v-on:mouseleave = "remove"></i>
-							<i class="fab fa-ubuntu" v-on:mouseover = "ubuntu" v-on:mouseleave = "remove"></i>
-							<i class="fab fa-vuejs" v-on:mouseover = "vue" v-on:mouseleave = "remove"></i>
-							<i class="fab fa-wordpress" v-on:mouseover = "wordpress" v-on:mouseleave = "remove"></i>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<footer>
-			<small>&copy; <a href="https://rockhopper-penguin.web.app/" target="_blank">Rockhopper-Penguin</a></small>
-		</footer>
-		<script src="src/profile.js"></script>
-		<script src="src/skill.js"></script>
-	</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
 </html>

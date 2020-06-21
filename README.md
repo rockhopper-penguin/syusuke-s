@@ -1,14 +1,24 @@
-# License
+# syusuke-s
 
-## Font Awesome
-- <a href="https://fontawesome.com/license/free">Font Awesome Free license</a>
+## Project setup
+```
+yarn install
+```
 
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
 
-## M PLUS 1p
-- <a href="https://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web">SIL Open Font License, Version 1.1</a>
+### Compiles and minifies for production
+```
+yarn build
+```
 
-## normalize.css
-- <a href="https://opensource.org/licenses/mit-license.php">MIT License</a>
+### Lints and fixes files
+```
+yarn lint
+```
 
-## Vue.js
-- <a href="https://opensource.org/licenses/mit-license.php">MIT License</a>
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
