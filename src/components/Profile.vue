@@ -9,5 +9,4 @@ import { Component, Vue } from "vue-property-decorator";
 export default class Profile extends Vue {}
 </script>
 
-<style>
-</style>
+<style></style>
