@@ -1,6 +1,15 @@
 <template>
   <div>
     <p>{{ getJson }}</p>
+    <div>
+      <strong>You can get the json data at cURL!</strong>
+      <p id="json_url">
+        curl
+        <a href="https://syusuke-s.web.app/json/introduction.json"
+          >https://syusuke-s.web.app/json/introduction.json</a
+        >
+      </p>
+    </div>
   </div>
 </template>
 
@@ -25,4 +34,15 @@ export default class Profile extends Vue {
 }
 </script>
 
-<style></style>
+<style>
+#json_url {
+  border-radius: 5px;
+  padding: 10px;
+  width: 80%;
+  margin: 10px auto 10px;
+  box-shadow: 0px 0px 10px gray;
+}
+#json_url a {
+  color: black;
+}
+</style>
