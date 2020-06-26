@@ -7,6 +7,9 @@
       <p>
         <router-link to="/about">About</router-link>
       </p>
+      <p>
+        <router-link to="/links">Links</router-link>
+      </p>
     </div>
     <router-view />
   </div>
