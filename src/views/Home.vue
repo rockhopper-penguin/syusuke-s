@@ -28,6 +28,10 @@ export default class Home extends Vue {
 </script>
 
 <style>
+.home {
+  width: 100%;
+}
+
 .penguin_icon_images {
   margin: 10px;
 }
@@ -36,5 +40,12 @@ export default class Home extends Vue {
   height: auto;
   border-radius: 20px;
   box-shadow: 0px 0px 20px gray;
+}
+
+@media screen and (max-width: 600px) {
+  .penguin_icon_images img {
+    width: 70%;
+    height: auto;
+  }
 }
 </style>
