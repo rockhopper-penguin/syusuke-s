@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <Profile></Profile>
+    <Profile>gettintg datas...</Profile>
   </div>
 </template>
 
