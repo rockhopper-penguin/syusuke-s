@@ -12,13 +12,11 @@ app.get("/", cors(), (req: express.Request, res: express.Response) => {
 });
 
 app.get("/data", cors(), (req: express.Request, res: express.Response) => {
-  const data: object = [
-    {
-      name: "Rockhopper-Penguin",
-      Github_url: "https://github.com/rockhopper-penguin",
-      using_language: "TypeScript",
-    },
-  ];
+  const data: object = {
+    name: "Rockhopper-Penguin",
+    Github_url: "https://github.com/rockhopper-penguin",
+    using_language: "TypeScript",
+  };
   return res.send(JSON.stringify(data));
 });
 
