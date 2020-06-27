@@ -8,6 +8,25 @@
         alt="ペンギン"
       />
     </div>
+    <div>
+      <p>
+        FaceBook：<a
+          href="https://www.facebook.com/penguin.s.seto"
+          target="_blank"
+          >瀬戸 秀輔(penguin.s.seto)</a
+        >
+      </p>
+      <p>
+        GitHub：<a href="https://github.com/rockhopper-penguin" target="_blank"
+          >Rockhopper-Penguin</a
+        >
+      </p>
+      <p>
+        Qiita：<a href="https://qiita.com/rockhopper-penguin" target="_blank"
+          >@rockhopper-penguin
+        </a>
+      </p>
+    </div>
   </div>
 </template>
 
@@ -30,6 +49,14 @@ export default class Home extends Vue {
 <style>
 .home {
   width: 100%;
+}
+
+.home div {
+  display: inline-block;
+}
+
+.home div:nth-of-type(2) {
+  margin: 10px;
 }
 
 .penguin_icon_images {
