@@ -26,4 +26,4 @@ app.get("/data", (req: express.Request, res: express.Response) => {
 
 export default app;
 
-export const helloWorld = functions.https.onRequest(app);
+export const api = functions.https.onRequest(app);
