@@ -3,7 +3,7 @@ import express from "express";
 const app: express.Express = express();
 
 app.get("/", (req: express.Request, res: express.Response) => {
-  return res.send("Rockhopper-Penguin");
+  return res.send("Communication successful!");
 });
 
 app.get("/data", (req: express.Request, res: express.Response) => {
