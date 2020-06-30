@@ -3,28 +3,26 @@
     <div class="penguin_icon_images">
       <img
         :src="homePenguinImage"
-        v-on:mouseover="homePenguinImageOver"
-        v-on:mouseleave="homePenguinImageRemove"
+        @mouseover="homePenguinImageOver"
+        @mouseleave="homePenguinImageRemove"
         alt="ペンギン"
       />
     </div>
     <div>
       <p>
-        FaceBook：<a
+        FaceBook：
+        <a
           href="https://www.facebook.com/penguin.s.seto"
           target="_blank"
-          >瀬戸 秀輔(penguin.s.seto)</a
-        >
+        >瀬戸 秀輔(penguin.s.seto)</a>
       </p>
       <p>
-        GitHub：<a href="https://github.com/rockhopper-penguin" target="_blank"
-          >Rockhopper-Penguin</a
-        >
+        GitHub：
+        <a href="https://github.com/rockhopper-penguin" target="_blank">Rockhopper-Penguin</a>
       </p>
       <p>
-        Qiita：<a href="https://qiita.com/rockhopper-penguin" target="_blank"
-          >@rockhopper-penguin
-        </a>
+        Qiita：
+        <a href="https://qiita.com/rockhopper-penguin" target="_blank">@rockhopper-penguin</a>
       </p>
     </div>
   </div>
