@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="links_root">
     <p>Links</p>
-    <div>
+    <div class="links_links">
       <p>
         Bitbucket
         <a href="https://bitbucket.org/Rockhopper-Penguin/">rockhopper-penguin</a>
@@ -37,4 +37,13 @@ import { Component, Vue } from "vue-property-decorator";
 export default class Links extends Vue {}
 </script>
 
-<style></style>
+<style>
+.links_root {
+  width: 70%;
+  margin: auto;
+}
+
+.links_links p {
+  text-align: left;
+}
+</style>
