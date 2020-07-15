@@ -5,9 +5,9 @@
       <strong>You can get the json data at cURL!</strong>
       <p id="json_url">
         curl
-        <a href="https://us-central1-syusuke-s.cloudfunctions.net/api/data"
-          >https://us-central1-syusuke-s.cloudfunctions.net/api</a
-        >
+        <a
+          href="https://us-central1-syusuke-s.cloudfunctions.net/api/data"
+        >https://us-central1-syusuke-s.cloudfunctions.net/api</a>
       </p>
     </div>
   </div>
@@ -26,9 +26,13 @@ export default class Profile extends Vue {
   }
 
   private async getDatas() {
-    const res = await axios.get("json/introduction.json").then((response) => {
-      this.getJson = response.data;
-    });
+    try {
+      const res = await axios.get("./json/introduction.json").then(response => {
+        this.getJson = response.data;
+      });
+    } catch (e) {
+      this.getJson = ["データ取得エラー！", e];
+    }
   }
 }
 </script>
