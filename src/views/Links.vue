@@ -4,7 +4,9 @@
     <div>
       <p>
         Bitbucket
-        <a href="https://bitbucket.org/Rockhopper-Penguin/">rockhopper-penguin</a>
+        <a href="https://bitbucket.org/Rockhopper-Penguin/"
+          >rockhopper-penguin</a
+        >
       </p>
       <p>
         connpass
