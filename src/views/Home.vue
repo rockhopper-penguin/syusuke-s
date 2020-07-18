@@ -11,18 +11,21 @@
     <div>
       <p>
         FaceBook：
-        <a
-          href="https://www.facebook.com/penguin.s.seto"
-          target="_blank"
-        >瀬戸 秀輔(penguin.s.seto)</a>
+        <a href="https://www.facebook.com/penguin.s.seto" target="_blank"
+          >瀬戸 秀輔(penguin.s.seto)</a
+        >
       </p>
       <p>
         GitHub：
-        <a href="https://github.com/rockhopper-penguin" target="_blank">Rockhopper-Penguin</a>
+        <a href="https://github.com/rockhopper-penguin" target="_blank"
+          >Rockhopper-Penguin</a
+        >
       </p>
       <p>
         Qiita：
-        <a href="https://qiita.com/rockhopper-penguin" target="_blank">@rockhopper-penguin</a>
+        <a href="https://qiita.com/rockhopper-penguin" target="_blank"
+          >@rockhopper-penguin</a
+        >
       </p>
     </div>
   </div>
