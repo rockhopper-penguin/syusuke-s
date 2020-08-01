@@ -42,6 +42,12 @@
   margin: 10px;
 }
 
+#nav p:hover {
+  font-size: 1.1rem;
+  border-top: solid 3px black;
+  border-bottom: solid 3px black;
+}
+
 #nav a.router-link-exact-active {
   color: #42b983;
 }

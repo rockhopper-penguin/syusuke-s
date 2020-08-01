@@ -1,6 +1,7 @@
 import * as functions from "firebase-functions";
 import * as express from "express";
 import * as cors from "cors";
+import * as moment from "moment-timezone";
 
 // Start writing Firebase Functions
 // https://firebase.google.com/docs/functions/typescript
@@ -16,6 +17,10 @@ app.get("/data", cors(), (req: express.Request, res: express.Response) => {
     name: "Rockhopper-Penguin",
     Github_url: "https://github.com/rockhopper-penguin",
     using_language: "TypeScript",
+    acquisition_time: moment()
+      .tz("Asia/Tokyo")
+      .format("YYYY-MM/DD hh:mm:ss"),
+    time_zone: "JST (UTC+0900)",
   };
   return res.send(JSON.stringify(data));
 });
