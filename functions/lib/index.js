@@ -4,7 +4,7 @@ exports.api = void 0;
 const functions = require("firebase-functions");
 const express = require("express");
 const cors = require("cors");
-const moment = require("moment");
+const moment = require("moment-timezone");
 // Start writing Firebase Functions
 // https://firebase.google.com/docs/functions/typescript
 const app = express();
@@ -16,7 +16,10 @@ app.get("/data", cors(), (req, res) => {
         name: "Rockhopper-Penguin",
         Github_url: "https://github.com/rockhopper-penguin",
         using_language: "TypeScript",
-        acquisition_time: moment().format("YYYY-MM/DD hh:mm:ss"),
+        acquisition_time: moment()
+            .tz("Asia/Tokyo")
+            .format("YYYY-MM/DD hh:mm:ss"),
+        time_zone: "JST (UTC+0900)",
     };
     return res.send(JSON.stringify(data));
 });
