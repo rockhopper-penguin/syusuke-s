@@ -1,6 +1,7 @@
 <template>
   <div class="Portfolio">
     <p>作品・ポートフォリオ</p>
+    <p>Comming soon.</p>
   </div>
 </template>
 
