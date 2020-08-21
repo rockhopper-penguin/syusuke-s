@@ -27,9 +27,11 @@ export default class Profile extends Vue {
 
   private async getDatas() {
     try {
-      const res = await axios.get("./json/introduction.json").then(response => {
-        this.getJson = response.data;
-      });
+      const res = await axios
+        .get("./json/introduction.json")
+        .then((response) => {
+          this.getJson = response.data;
+        });
     } catch (e) {
       this.getJson = ["データ取得エラー！", e];
     }
@@ -46,6 +48,6 @@ export default class Profile extends Vue {
   box-shadow: 0px 0px 10px gray;
 }
 #json_url a {
-  color: black;
+  color: white;
 }
 </style>
