@@ -67,7 +67,7 @@ export default class Home extends Vue {
   width: 500px;
   height: auto;
   border-radius: 20px;
-  box-shadow: 0px 0px 20px gray;
+  box-shadow: 0px 0px 20px rgb(56, 56, 56);
 }
 
 @media screen and (max-width: 600px) {
