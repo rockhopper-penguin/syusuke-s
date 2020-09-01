@@ -1,6 +1,5 @@
 <template>
   <div>
-    <p>{{ getJson }}</p>
     <div>
       <strong>You can get the json data at cURL!</strong>
       <p id="json_url">
