@@ -1,24 +1,9 @@
-# syusuke-s
+# MySite
 
-## Project setup
-```
-yarn install
-```
+## 言語・フレームワーク
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+Vue + TypeScript
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## ホスティング
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Firebase Hosting
