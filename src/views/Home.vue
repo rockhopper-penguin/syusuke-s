@@ -27,6 +27,13 @@
           >@rockhopper-penguin</a
         >
       </p>
+      <p>
+        Rockhopper-Penguin：<a
+          href="https://rockhopper-penguin.github.io/"
+          target="_blank"
+          >Rockhopper-Penguin</a
+        >
+      </p>
     </div>
   </div>
 </template>
