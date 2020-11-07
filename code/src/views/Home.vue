@@ -45,10 +45,6 @@ import { Component, Vue } from "vue-property-decorator";
 export default class Home extends Vue {
   constructor() {
     super();
-    console.log(
-      "%c ",
-      "background: url(https://en.gravatar.com/avatar/5d61d871820d61578f4d1829eadcffd1); background-size: 64px 64px; padding: 70px 70px; background-repeat: no-repeat;"
-    );
   }
 
   private homePenguinImage = "img/king_and_rockhopper.jpg";
