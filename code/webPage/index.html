@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JavaScript -->
+    <script src="./assets/index.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/style.css">
+    <!-- ローディングCSS -->
+    <link rel="stylesheet" href="./assets/loading.css">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>Rockhopper-Penguin</title>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EST5514TLW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EST5514TLW');
+</script>
+<!-- ローディング -->
+<div class="loading" id="loading__modal">
+    <div class="loading__div"></div>
+</div>
+<body onload="loadCompleated();" id="top">
+    <header class="header">
+        <div class="header__text" onclick="pageToTop();">Rockhopper-Penguin</div>
+    </header>
+    <main>
+        <div class="main__profile">
+            <div class="main__profile--image">
+                <img src="./assets/img/icon.JPG" alt="">
+            </div>
+            <div  class="main__profile--description">
+                <p class="main__profile--name">瀬戸秀輔(Rockhopper-Penguin)</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
