@@ -2,7 +2,7 @@
 
 ## 言語・フレームワーク
 
-Vue + TypeScript
+HTML5 + CSS3 + JavaScript
 
 ## ホスティング
 
