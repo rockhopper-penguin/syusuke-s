@@ -18,14 +18,19 @@
     <title>Rockhopper-Penguin</title>
   </head>
   <!-- Google tag (gtag.js) -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-EST5514TLW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-EST5514TLW"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  gtag('config', 'G-EST5514TLW');
-</script> -->
+    gtag("config", "G-EST5514TLW");
+  </script>
   <!-- ローディング -->
   <div class="loading" id="loading__modal">
     <div class="loading__div"></div>
@@ -35,6 +40,7 @@
       <div class="header__text" onclick="pageToTop();">Rockhopper-Penguin</div>
     </header>
     <main>
+      <!-- プロフィール -->
       <div class="main__card">
         <!-- プロフィール画像 -->
         <div class="main__profile--image">
@@ -96,6 +102,15 @@
               Zenn
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="main__card">
+        <div class="main__introduction--text">
+          <p>
+            JavaScript(TypeScript)やLaravelなどのWEB系プログラムを書いてます！
+            <br />あと、ペンギンが好きです。
+          </p>
         </div>
       </div>
     </main>
