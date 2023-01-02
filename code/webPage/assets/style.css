@@ -121,6 +121,12 @@ main {
     text-align: center;
     padding: 0px 0px 10px 0px;
   }
+  .main__profile--introduction {
+    width: 90%;
+    margin: -10px auto 20px auto;
+    color: #212121;
+    font-weight: 600;
+  }
   .main__profile--image {
     text-align: center;
     padding: 10px 0px;
@@ -146,17 +152,6 @@ main {
     border-radius: 5px;
     font-weight: 800;
     letter-spacing: 3px;
-  }
-
-  /* 自己紹介 */
-  .main__introduction--text {
-    width: 90%;
-    color: #212121;
-    margin: 10px auto;
-    padding: 5px 0px;
-  }
-  .main__introduction--text p {
-    word-break: break-word;
   }
 }
 
@@ -245,6 +240,12 @@ main {
     color: #212121;
     text-align: center;
   }
+  .main__profile--introduction {
+    color: #212121;
+    font-weight: 600;
+    width: 80%;
+    margin: -10px auto 20px auto;
+  }
 
   /* プロフィール リンク */
   .main__profile--links {
@@ -258,14 +259,5 @@ main {
     font-weight: 900;
     margin: 10px auto;
     border-radius: 5px;
-  }
-
-  .main__introduction--text {
-    width: 90%;
-    color: #212121;
-    margin: 10px auto;
-  }
-  .main__introduction--text p {
-    word-break: break-word;
   }
 }
