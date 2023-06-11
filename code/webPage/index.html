@@ -1,126 +1,92 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- JavaScript -->
-    <script src="./assets/index.js"></script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="./assets/style.css" />
-    <!-- ローディングCSS -->
-    <link rel="stylesheet" href="./assets/loading.css" />
-    <!-- Normalize CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <!-- Juicer -->
-    <script src="//kitchen.juicer.cc/?color=7GVPWdkdPzc=" async></script>
-    <title>Rockhopper-Penguin</title>
-  </head>
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-EST5514TLW"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
 
-    gtag("config", "G-EST5514TLW");
-  </script>
-  <!-- ローディング -->
-  <div class="loading" id="loading__modal">
-    <div class="loading__div"></div>
-  </div>
-  <body onload="loadCompleated();" id="top">
-    <header class="header">
-      <div class="header__text" onclick="pageToTop();">Rockhopper-Penguin</div>
-    </header>
-    <main>
-      <!-- プロフィール -->
-      <div class="main__card">
-        <!-- プロフィール画像 -->
-        <div class="main__profile--image">
-          <img src="./assets/img/icon.JPG" alt="" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- JavaScript -->
+  <script src="./assets/index.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/style.css" />
+  <!-- ローディングCSS -->
+  <link rel="stylesheet" href="./assets/loading.css" />
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <!-- Juicer -->
+  <script src="//kitchen.juicer.cc/?color=7GVPWdkdPzc=" async></script>
+  <title>Rockhopper-Penguin</title>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EST5514TLW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-EST5514TLW");
+</script>
+<!-- ローディング -->
+<div class="loading" id="loading__modal">
+  <div class="loading__div"></div>
+</div>
+
+<body onload="loadCompleated();" id="top">
+  <header class="header">
+    <div class="header__text" onclick="pageToTop();">Rockhopper-Penguin</div>
+  </header>
+  <main>
+    <!-- プロフィール -->
+    <div class="main__card">
+      <!-- プロフィール画像 -->
+      <div class="main__profile--image">
+        <img src="./assets/img/icon.webp" alt="" />
+      </div>
+      <div class="main__profile--text">
+        <!-- 名前 -->
+        <div class="main__profile--description">
+          <p class="main__profile--name">瀬戸秀輔(Rockhopper-Penguin)</p>
+          <p class="main__profile--introduction">
+            JavaScript(TypeScript)やLaravelなどのWEB系プログラムを書いてます！
+            <br />あと、ペンギンが好きです。
+          </p>
         </div>
-        <div class="main__profile--text">
-          <!-- 名前 -->
-          <div class="main__profile--description">
-            <p class="main__profile--name">瀬戸秀輔(Rockhopper-Penguin)</p>
-            <p class="main__profile--introduction">
-              JavaScript(TypeScript)やLaravelなどのWEB系プログラムを書いてます！
-              <br />あと、ペンギンが好きです。
-            </p>
+        <!-- リンク -->
+        <div class="main__profile--links">
+          <!-- Facebook -->
+          <div class="profile__links--div" id="facebook" onclick="openLink('facebook')">
+            Facebook
           </div>
-          <!-- リンク -->
-          <div class="main__profile--links">
-            <!-- Facebook -->
-            <div
-              class="profile__links--div"
-              id="facebook"
-              onclick="openLink('facebook')"
-            >
-              Facebook
-            </div>
-            <!-- GitHub -->
-            <div
-              class="profile__links--div"
-              id="github"
-              onclick="openLink('github')"
-            >
-              GitHub
-            </div>
-            <!-- Instagram -->
-            <div
-              class="profile__links--div"
-              id="instagram"
-              onclick="openLink('instagram')"
-            >
-              Instagram
-            </div>
-            <!-- note -->
-            <div
-              class="profile__links--div"
-              id="note"
-              onclick="openLink('note')"
-            >
-              note
-            </div>
-            <!-- Qiita -->
-            <div
-              class="profile__links--div"
-              id="qiita"
-              onclick="openLink('qiita')"
-            >
-              Qiita
-            </div>
-            <!-- Zenn -->
-            <div
-              class="profile__links--div"
-              id="zenn"
-              onclick="openLink('zenn')"
-            >
-              Zenn
-            </div>
+          <!-- GitHub -->
+          <div class="profile__links--div" id="github" onclick="openLink('github')">
+            GitHub
+          </div>
+          <!-- Instagram -->
+          <div class="profile__links--div" id="instagram" onclick="openLink('instagram')">
+            Instagram
+          </div>
+          <!-- note -->
+          <div class="profile__links--div" id="note" onclick="openLink('note')">
+            note
+          </div>
+          <!-- Qiita -->
+          <div class="profile__links--div" id="qiita" onclick="openLink('qiita')">
+            Qiita
+          </div>
+          <!-- Zenn -->
+          <div class="profile__links--div" id="zenn" onclick="openLink('zenn')">
+            Zenn
           </div>
         </div>
       </div>
-    </main>
-    <footer class="footer">
-      <small
-        ><a
-          href="https://github.com/rockhopper-penguin/syusuke-s"
-          target="_blank"
-          rel="”noopener"
-          noreferrer”
-          >&copy; Rockhopper-Penguin 2023</a
-        ></small
-      >
-    </footer>
-  </body>
+    </div>
+  </main>
+  <footer class="footer">
+    <small><a href="https://github.com/rockhopper-penguin/syusuke-s" target="_blank" rel="”noopener" noreferrer”>&copy;
+        Rockhopper-Penguin 2023</a></small>
+  </footer>
+</body>
+
 </html>
