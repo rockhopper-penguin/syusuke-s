@@ -29,3 +29,17 @@ firebase login
 ```
 firebase deploy
 ```
+
+---
+
+# GitHub Action の設定
+
+1. firebase cli でトークンの発行
+
+```
+firebase login:ci
+```
+
+2. トークンを GitHub の「Settings > Secrets and variables > Actions > New repository secret」をクリック
+
+3. Name に「FIREBASE_TOKEN」、Secret に firebase cli で発行したトークンを入力
