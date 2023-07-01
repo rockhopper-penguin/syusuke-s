@@ -241,3 +241,23 @@ main {
     border-radius: 5px;
   }
 }
+
+/* CSSアニメーション */
+.fade {
+    opacity: 0;
+    animation: fade 0.2s ease forwards;
+}
+@keyframes fade {
+    0% { opacity: 0; }
+    50% { opacity: 0.5; }
+    100% {  opacity: 1;}
+}
+
+.main__profile--name {animation-delay: 0.4s;}
+.main__profile--introduction {animation-delay: 0.8s;}
+.facebook {animation-delay: 1.2s;}
+.github {animation-delay: 1.6s;}
+.instagram {animation-delay: 2s;}
+.note {animation-delay: 2.4s;}
+.qiita {animation-delay: 2.8s;}
+.zenn {animation-delay: 3.2s;}
