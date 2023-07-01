@@ -5,14 +5,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- JavaScript -->
-  <script src="./assets/index.js"></script>
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/style.css" />
-  <!-- ローディングCSS -->
-  <link rel="stylesheet" href="./assets/loading.css" />
   <!-- Normalize CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="./assets/normalize.min.css" />
   <!-- Juicer -->
   <script src="//kitchen.juicer.cc/?color=7GVPWdkdPzc=" async></script>
   <title>Rockhopper-Penguin</title>
@@ -28,10 +24,6 @@
 
   gtag("config", "G-EST5514TLW");
 </script>
-<!-- ローディング -->
-<div class="loading" id="loading__modal">
-  <div class="loading__div"></div>
-</div>
 
 <body onload="loadCompleated();" id="top">
   <header class="header">
@@ -42,7 +34,7 @@
     <div class="main__card">
       <!-- プロフィール画像 -->
       <div class="main__profile--image">
-        <img src="./assets/img/icon.webp" alt="" />
+        <img src="./assets/img/icon.webp" loading="lazy" alt="" />
       </div>
       <div class="main__profile--text">
         <!-- 名前 -->
@@ -56,29 +48,41 @@
         <!-- リンク -->
         <div class="main__profile--links">
           <!-- Facebook -->
-          <div class="profile__links--div" id="facebook" onclick="openLink('facebook')">
-            Facebook
-          </div>
+          <a href="https://www.facebook.com/penguin.s.seto" target="_blank" rel="noopener noreferrer">
+            <div class="profile__links--div" id="facebook">
+              Facebook
+            </div>
+          </a>
           <!-- GitHub -->
-          <div class="profile__links--div" id="github" onclick="openLink('github')">
-            GitHub
-          </div>
+          <a href="https://github.com/rockhopper-penguin" target="_blank" rel="noopener noreferrer">
+            <div class="profile__links--div" id="github">
+              GitHub
+            </div>
+          </a>
           <!-- Instagram -->
-          <div class="profile__links--div" id="instagram" onclick="openLink('instagram')">
-            Instagram
-          </div>
+          <a href="https://www.instagram.com/rock.hopper_penguin/" target="_blank" rel="noopener noreferrer">
+            <div class="profile__links--div" id="instagram">
+              Instagram
+            </div>
+          </a>
           <!-- note -->
-          <div class="profile__links--div" id="note" onclick="openLink('note')">
-            note
-          </div>
+          <a href="https://note.com/rock_penguin" target="_blank" rel="noopener noreferrer">
+            <div class="profile__links--div" id="note">
+              note
+            </div>
+          </a>
           <!-- Qiita -->
-          <div class="profile__links--div" id="qiita" onclick="openLink('qiita')">
-            Qiita
-          </div>
+          <a href="https://qiita.com/rockhopper-penguin" target="_blank" rel="noopener noreferrer">
+            <div class="profile__links--div" id="qiita">
+              Qiita
+            </div>
+          </a>
           <!-- Zenn -->
-          <div class="profile__links--div" id="zenn" onclick="openLink('zenn')">
-            Zenn
-          </div>
+          <a href="https://zenn.dev/rock_penguin" target="_blank" rel="noopener noreferrer">
+            <div class="profile__links--div" id="zenn">
+              Zenn
+            </div>
+          </a>
         </div>
       </div>
     </div>

@@ -1,0 +1,30 @@
+name: FirebaseDeploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  FirebaseDeploy:
+    name: FirebaseDeploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+      - name: setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: "https://registry.npmjs.org"
+      - name: Install Dependencies
+        run: yarn
+      - name: Build
+        run: |
+          npm install
+          npm install -g firebase-tools
+      - name: deploy to Firebase Hosting
+        run: |
+          firebase deploy --token $FIREBASE_TOKEN
+        env:
+          FIREBASE_TOKEN: ${{ secrets.key }}
